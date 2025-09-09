@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Animada</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Ativando plugin de tipografia -->
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+        plugins: [tailwindTypography],
+      };
+    </script> -->
+
+    <!-- Animate.css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header
+      class="bg-white shadow-md fixed w-full top-0 z-50 animate__animated animate__fadeInDown"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-blue-600">MyLanding</h1>
+        <nav class="space-x-6 hidden md:flex">
+          <a href="#" class="hover:text-blue-600">Home</a>
+          <a href="#about" class="hover:text-blue-600">Sobre</a>
+          <a href="#services" class="hover:text-blue-600">Serviços</a>
+          <a href="#contact" class="hover:text-blue-600">Contato</a>
+        </nav>
+        <button class="md:hidden text-gray-600">☰</button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="pt-32 pb-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center animate__animated animate__fadeIn"
+    >
+      <div class="max-w-3xl mx-auto px-6 prose prose-lg">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+          Soluções Digitais Que Transformam Seu Negócio
+        </h2>
+        <p class="mb-8">
+          Nós ajudamos empresas a crescer online com sites modernos, rápidos e
+          seguros. Tenha uma presença digital que realmente gera resultados e
+          encanta seus clientes.
+        </p>
+        <button
+          class="px-8 py-4 bg-yellow-400 text-gray-900 font-semibold rounded-xl shadow-lg hover:bg-yellow-300 transition animate__animated animate__pulse animate__infinite btn"
+        >
+          Começar Agora
+        </button>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section id="about" class="py-16 px-6 max-w-7xl mx-auto">
+      <h3
+        class="text-3xl font-bold text-center mb-12 animate__animated animate__fadeInUp"
+      >
+        Por que nos escolher?
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl transition animate__animated animate__fadeInLeft"
+        >
+          <div class="text-blue-600 text-4xl mb-4">⚡</div>
+          <h4 class="font-bold text-xl mb-2">Performance</h4>
+          <p class="text-gray-600">
+            Sites e aplicativos otimizados para velocidade e eficiência, sem
+            comprometer a qualidade.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl transition animate__animated animate__fadeInUp"
+        >
+          <div class="text-green-600 text-4xl mb-4">🔒</div>
+          <h4 class="font-bold text-xl mb-2">Segurança</h4>
+          <p class="text-gray-600">
+            Proteção de dados avançada, garantindo confiança e tranquilidade
+            para você e seus clientes.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl transition animate__animated animate__fadeInRight"
+        >
+          <div class="text-purple-600 text-4xl mb-4">🎨</div>
+          <h4 class="font-bold text-xl mb-2">Design Moderno</h4>
+          <p class="text-gray-600">
+            Layouts elegantes e intuitivos que melhoram a experiência do usuário
+            e aumentam conversões.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="py-16 px-6 bg-gray-100">
+      <h3
+        class="text-3xl font-bold text-center mb-12 animate__animated animate__fadeInUp"
+      >
+        Nossos Serviços
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div
+          class="bg-white rounded-2xl shadow p-8 text-center hover:shadow-xl transition animate__animated animate__fadeInLeft"
+        >
+          <div class="text-blue-500 text-4xl mb-4">💻</div>
+          <h4 class="font-bold text-xl mb-2">Desenvolvimento Web</h4>
+          <p class="text-gray-600">
+            Criamos sites responsivos e aplicativos web modernos que encantam os
+            usuários.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow p-8 text-center hover:shadow-xl transition animate__animated animate__fadeInUp"
+        >
+          <div class="text-green-500 text-4xl mb-4">📱</div>
+          <h4 class="font-bold text-xl mb-2">Apps Mobile</h4>
+          <p class="text-gray-600">
+            Aplicativos para Android e iOS com interface amigável e alta
+            performance.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow p-8 text-center hover:shadow-xl transition animate__animated animate__fadeInRight"
+        >
+          <div class="text-purple-500 text-4xl mb-4">🎨</div>
+          <h4 class="font-bold text-xl mb-2">Design UX/UI</h4>
+          <p class="text-gray-600">
+            Design profissional que garante experiência incrível e aumenta
+            conversão.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-16 px-6">
+      <h3
+        class="text-3xl font-bold text-center mb-12 animate__animated animate__fadeInUp"
+      >
+        O que nossos clientes dizem
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div
+          class="bg-white rounded-2xl shadow p-6 animate__animated animate__fadeInLeft"
+        >
+          <p class="text-gray-700 mb-4">
+            "O trabalho deles superou nossas expectativas. Nosso site nunca
+            esteve tão rápido e bonito."
+          </p>
+          <span class="font-bold text-blue-600">— Maria Silva</span>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow p-6 animate__animated animate__fadeInUp"
+        >
+          <p class="text-gray-700 mb-4">
+            "Equipe muito profissional! Atendimento excelente e entrega dentro
+            do prazo."
+          </p>
+          <span class="font-bold text-blue-600">— João Pereira</span>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow p-6 animate__animated animate__fadeInRight"
+        >
+          <p class="text-gray-700 mb-4">
+            "Recomendo para quem quer elevar a presença digital do seu negócio."
+          </p>
+          <span class="font-bold text-blue-600">— Ana Costa</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipe -->
+    <section class="py-16 px-6 bg-gray-50">
+      <h3
+        class="text-3xl font-bold text-center mb-12 animate__animated animate__fadeInUp"
+      >
+        Conheça Nossa Equipe
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div
+          class="bg-white rounded-2xl shadow p-6 text-center hover:shadow-xl transition animate__animated animate__fadeInLeft"
+        >
+          <img
+            src="https://i.pravatar.cc/150?img=51"
+            class="w-24 h-24 mx-auto rounded-full mb-4"
+            alt="Equipe 1"
+          />
+          <h4 class="font-bold text-xl mb-2">Lucas Silva</h4>
+          <p class="text-gray-600">Desenvolvedor Web</p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow p-6 text-center hover:shadow-xl transition animate__animated animate__fadeInUp"
+        >
+          <img
+            src="https://i.pravatar.cc/150?img=31"
+            class="w-24 h-24 mx-auto rounded-full mb-4"
+            alt="Equipe 2"
+          />
+          <h4 class="font-bold text-xl mb-2">Ana Costa</h4>
+          <p class="text-gray-600">UX/UI Designer</p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow p-6 text-center hover:shadow-xl transition animate__animated animate__fadeInRight"
+        >
+          <img
+            src="https://i.pravatar.cc/150?img=33"
+            class="w-24 h-24 mx-auto rounded-full mb-4"
+            alt="Equipe 3"
+          />
+          <h4 class="font-bold text-xl mb-2">João Pereira</h4>
+          <p class="text-gray-600">Gerente de Projetos</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 px-6 bg-gray-100">
+      <h3
+        class="text-3xl font-bold text-center mb-12 animate__animated animate__fadeInUp"
+      >
+        Perguntas Frequentes
+      </h3>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <details
+          class="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition animate__animated animate__fadeInUp"
+        >
+          <summary class="font-semibold cursor-pointer">
+            Quanto tempo leva para criar um site?
+          </summary>
+          <p class="mt-2 text-gray-600">
+            Normalmente entre 2 a 6 semanas, dependendo da complexidade e
+            funcionalidades solicitadas.
+          </p>
+        </details>
+        <details
+          class="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition animate__animated animate__fadeInUp"
+        >
+          <summary class="font-semibold cursor-pointer">
+            Vocês oferecem suporte após entrega?
+          </summary>
+          <p class="mt-2 text-gray-600">
+            Sim! Oferecemos suporte e manutenção para garantir que tudo funcione
+            perfeitamente.
+          </p>
+        </details>
+        <details
+          class="bg-white rounded-2xl p-4 shadow hover:shadow-lg transition animate__animated animate__fadeInUp"
+        >
+          <summary class="font-semibold cursor-pointer">
+            É possível personalizar totalmente o projeto?
+          </summary>
+          <p class="mt-2 text-gray-600">
+            Sim! Cada projeto é feito sob medida, de acordo com as necessidades
+            do cliente.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section
+      id="contact"
+      class="py-20 bg-blue-600 text-white text-center animate__animated animate__fadeIn"
+    >
+      <h3 class="text-3xl md:text-4xl font-bold mb-6">
+        Pronto para levar seu negócio ao próximo nível?
+      </h3>
+      <p class="mb-8 max-w-xl mx-auto">
+        Entre em contato hoje mesmo e descubra como podemos criar soluções
+        digitais sob medida para você.
+      </p>
+      <button
+        class="px-10 py-4 bg-yellow-400 text-gray-900 font-semibold rounded-xl shadow-lg hover:bg-yellow-300 transition animate__animated animate__pulse animate__infinite"
+      >
+        Fale Conosco
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 text-gray-400 text-center py-6 animate__animated animate__fadeInUp"
+    >
+      <p>© 2025 MyLanding. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="basic_syntax.js" />
+  </body>
+</html>

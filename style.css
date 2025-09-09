@@ -1,0 +1,10 @@
+.btn {
+  background-color: #0000aa;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.active {
+  background-color: #00aa00 !important;
+  width: 400px;
+}
